@@ -1,10 +1,11 @@
 import subprocess
 import json
+import sys
 
 # d1 = subprocess.check_output(f' sudo -u postgres psql --command "SELECT datname FROM pg_database  WHERE datistemplate = false;"'.format('testsim@123'),shell=True)
 # d1 = d1.decode('UTF-8')
 # print(d1)
-DbName = "pk_25000"
+DbName = sys.argv[1]
 DbPassword = "hotandcold"
 
 
